@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment variables / secrets
+.env
+*.key
+*.pem
+
+# Credentials / serialized configuration
+*.pkl
+
+# Local data
+data/*.csv
+!data/Datensatz.csv
+data/*.json
+data/*.jsonl
+
+# Generated outputs
+outputs/*.csv
+!outputs/MedicFC.csv
+outputs/*.json
+outputs/*.jsonl
+
+# Model/cache files
+models/
+.cache/
+huggingface/
+sentence_transformers/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Local reviewer data
+*_test.csv

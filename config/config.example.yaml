@@ -1,0 +1,19 @@
+model:
+  name: all-MiniLM-L6-v2
+
+umls:
+  similarity_threshold: 0.5
+  top_k: 10
+
+query:
+  max_terms: 15
+
+google:
+  max_results: 10
+
+evidence:
+  similarity_threshold: 0.5
+
+reranking:
+  semantic_weight: 0.4
+  concept_coverage_weight: 0.6
