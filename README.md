@@ -10,35 +10,14 @@ The repository provides:
 - The multi-encoder verification model.
 - The input file to the multi-encoder model (`Input.pkl`)
 
-## Repository Structure
+## Hyperparameter Configuration
 
-```text
-medicfc-evidence-retrieval/
+The optimal hyperparameters used for training the models are summarized below.
 
-├── README.md
-├── requirements.txt
-├── .env.example
-├── .gitignore
-├── config/
-│   └── config.example.yaml
-├── data/
-│   ├── Datensatz.csv
-│   └── README.md
-├── outputs/
-│   ├── MedicFC.csv
-│   └── README.md
-├── scripts/
-│   └── run_pipeline.py
-└── src/
-    ├── preprocessing.py
-    ├── phrase_extraction.py
-    ├── umls.py
-    ├── query_builder.py
-    ├── google_search.py
-    ├── web_extraction.py
-    ├── sentence_ranking.py
-    ├── reranking.py
-    └── four_encoder/
-        ├── model.py
-        ├── train.py
-        └── evaluate.py
+| Hyperparameter | PubMedBERT | DeBERTa-v3-Large | SciBERT |
+|---|---:|---:|---:|
+| Learning rate | $5\times10^{-5}$ | $5\times10^{-6}$ | $5\times10^{-5}$ |
+| Training epochs | 5 | 5 | 5 |
+| Weight decay | 0.02 | 0.01 | 0.01 |
+| Dropout | 0.25 | Default | 0.10 |
+| Max sequence length | 384 | 512 | 512 |
