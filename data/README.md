@@ -1,5 +1,5 @@
-The input claim dataset will be placed here in this directory before running the pipeline.
+Datensatz.csv: This file contains the input from HealFC by Vladika et al. 
 
-The input CSV must contain an `en_claim` column containing the English claims to be processed.
+MedicFC: This file contains evidence collected by MedicFC framework for HealthFC claims. 
 
-The `Input.pkl` file is placed here which is input to the four encoder model.
+Input.pkl: This file process evidence extracted by MedicFC and pubmed abstracts and create input file for the training the encoder.  
