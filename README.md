@@ -8,6 +8,7 @@ The repository provides:
 - The final evidence collection and reranking results (`MedicFC.csv`)
 - Evidence retrieval and concept-aware reranking scripts
 - The multi-encoder verification model.
+- The input file to the multi-encoder model (`Input.pkl`)
 
 ## Repository Structure
 
@@ -29,7 +30,6 @@ medicfc-evidence-retrieval/
 ├── scripts/
 │   └── run_pipeline.py
 └── src/
-    ├── __init__.py
     ├── preprocessing.py
     ├── phrase_extraction.py
     ├── umls.py
@@ -39,7 +39,6 @@ medicfc-evidence-retrieval/
     ├── sentence_ranking.py
     ├── reranking.py
     └── four_encoder/
-        ├── __init__.py
         ├── model.py
         ├── train.py
         └── evaluate.py
